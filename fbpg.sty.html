@@ -1,0 +1,65 @@
+<html>
+<head>
+<link href="mystyle.css"  rel="stylesheet" type="text/css">
+<title>facebook page</title>
+<script>
+function validate(){
+	var nam1=document.getElementById("name1").value;
+var nam2=document.getElementById("name2").value;
+	if(nam1==""){
+		alert("please enter first name");
+	}
+	if(nam2==""){
+		alert("please enter second name");
+	}
+}
+</script>
+
+</head>
+<body>
+<TABLE id="main">
+<tr id="tr1">
+<th id="th1">
+facebook
+</th>
+<th id="th2">
+<input type="text" placeholder="e mail or mobile number"> <input type="password" placeholder="password"> <input type="button"value="login">
+</th>
+</tr>
+<td>
+<table id="tab2" cellspacing="0">
+<tr>
+<th id="th3">
+<h2>connect with friends and the world <br> around you on Facebook</h2>
+</th>
+</tr>
+<tr>
+<td>
+<p class="para1">See photos and updates from friends in News Feed</p>
+<p class="para1">Share what's new in your life on your Timeline</p>
+<p class="para1">Find more of what you're looking for with Graph Search</p>
+</td>
+</tr>
+</table>
+<td>
+<table id="tab3">
+<tr>
+<th id="th4">
+<h2>Sign Up</h2>
+</th>
+</tr>
+<tr>
+<td><form name="signup" onsubmit="return validate()">
+<input type="text" placeholder="first name" id="name1">&nbsp &nbsp<input type="text" placeholder="last name" id="name2"><br><br>
+<input type="text" placeholder="mobile number" id="mob"style="width:350px"><br><br>
+<input type="text" placeholder="e mail" id="mail"style="width:350px"><br><br>
+<input type="password" placeholder="password" style="width:350px"><br><br>
+<p id="small">By clicking Sign Up,you agree to our terms and that you have read our data use policy,<br>
+including our cookie use.</p>
+<input type="submit" value="Sign Up Now!">
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
