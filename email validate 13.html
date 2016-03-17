@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function validate(){
+var email=document.form.mail.value;
+if(email=="")
+{
+alert("please enter email");
+return false;
+}
+if(email!="")
+    {
+       var dotpos=email.lastIndexOf(".");
+        
+       var atpos=email.indexOf("@");
+       if(atpos<1 || dotpos<atpos+2 || dotpos+2>+email.length)
+           {
+               alert("Invalid email id");
+               return false;
+           }
+          
+       
+    }
+}
+</script>
+</head>
+<body>
+<form name="form" onsubmit="return validate();">
+<input type="text" name="mail">
+<input type="submit" value="validate">
+</body>
+</html>
